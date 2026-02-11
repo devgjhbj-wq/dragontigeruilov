@@ -29,18 +29,18 @@ const GameStage = () => {
   // ✅ CHIP DATA
   // ======================================================
   const chips = [
-    { value: 20, basePos: "80% 40%" },
-    { value: 50, basePos: "4% 45%" },
-    { value: 100, basePos: "4% 84%" },
-    { value: 200, basePos: "81% 79%" },
-    { value: 500, basePos: "3.8% 25.8%" },
-    { value: 2000, basePos: "79% 98%" },
+    { value: 20, basePos: "82% 39.8%" },
+    { value: 50, basePos: "3% 44.7%" },
+    { value: 100, basePos: "3% 85%" },
+    { value: 200, basePos: "81.9% 79.6%" },
+    { value: 500, basePos: "2.8% 24.7%" },
+    { value: 2000, basePos: "80% 99.5%" },
   ];
 
-  const activeRingPos = "9.6% 2%";
+  const activeRingPos = "9.8% 2%";
 
   const digitSprites: Record<string, string> = {
-    "0": "0% 95.52%",
+    "0": "0% 95.5%",
     "1": "28.5% 91.4%",
     "2": "0% 99.6%",
     "3": "30% 100%",
@@ -122,7 +122,7 @@ const GameStage = () => {
         <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[12%] aspect-square z-30 flex items-center justify-center">
           <img
             src="/timerprogress.webp"
-            className="absolute inset-0 bg-black rounded-full p-[2%] w-full h-full object-contain"
+            className="absolute inset-0  rounded-full p-[2%] w-full h-full object-contain"
             alt="timer"
           />
 
@@ -242,20 +242,20 @@ top: `${coin.top}%`,
               >
                 {/* CHIP BASE */}
                 <div
-                  className="absolute inset-0 rounded-full bg-no-repeat"
+                  className="absolute inset-0  bg-no-repeat"
                   style={{
                     backgroundImage: "url('/chipsui.webp')",
-                    backgroundSize: "240% 680%",
+                    backgroundSize: "230% 585%",
                     backgroundPosition: chip.basePos,
                   }}
                 />
 
                 {/* CHIP VALUE */}
-                <div className="absolute inset-0 flex items-center justify-center gap-[2%]">
+                <div className="absolute inset-0 flex items-center justify-center ">
                   {digits.map((d, idx) => (
                     <div
                       key={idx}
-                      className="w-[16%] aspect-square bg-no-repeat"
+                      className="w-[15%]  h-[25%] aspect-square bg-no-repeat"
                       style={{
                         backgroundImage: "url('/chipsui.webp')",
                         backgroundSize: "1100% 2200%",
@@ -297,7 +297,7 @@ top: `${coin.top}%`,
           </div>
 
           {/* Balance Bar */}
-          <div className="absolute left-[20%] bottom-[25%] w-[50%] h-[25%]">
+          <div className="absolute left-[20%] bottom-[25%] w-[50%] h-[35%]">
             <img
               src="/balacnebar.webp"
               className="absolute inset-0 w-full h-full"
