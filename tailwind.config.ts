@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       colors: {
+        "game-outer": "hsl(220 20% 8%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
