@@ -84,9 +84,8 @@ const GameStage = () => {
             className="absolute inset-0 rounded-full"
             style={{
               background: `conic-gradient(
-                transparent 0deg,
-                transparent ${(1 - elapsed) * 360}deg,
-                rgba(0,0,0,0.85) ${(1 - elapsed) * 360}deg
+                transparent ${elapsed * 360}deg,
+                black 0deg
               )`,
             }}
           />
