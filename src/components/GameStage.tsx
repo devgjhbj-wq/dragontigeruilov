@@ -13,23 +13,24 @@ const GameStage = () => {
         id="top-chip-rack"
         src="/chips.webp"
         alt="Chip rack"
-        className="absolute top-3 left-1/2 -translate-x-1/2 w-[70%] max-w-[320px]"
+        className="absolute top-[1.5%] left-1/2 -translate-x-1/2 w-[70%]"
       />
 
       {/* Center Timer Anchor */}
       <div
         id="timer-anchor"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30%] aspect-square flex items-center justify-center"
       >
         <img
           id="timer-ring"
           src="/timerprogress.webp"
           alt="Timer ring"
-          className="w-[25vw] max-w-[140px]"
+          className="w-full h-full"
         />
         <div
           id="timer-text"
-          className="absolute inset-0 flex items-center justify-center text-yellow-300 font-bold text-5xl"
+          className="absolute inset-0 flex items-center justify-center text-yellow-300 font-bold"
+          style={{ fontSize: 'clamp(1.5rem, 8cqw, 3.5rem)' }}
         >
           8
         </div>
