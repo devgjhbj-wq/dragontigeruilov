@@ -35,7 +35,7 @@ const GameStage = () => {
   }, []);
 
   return (
-    <div className="w-full h-[100svh] flex justify-center items-center bg-gray-800">
+    <div className="w-full h-full flex justify-center items-center bg-gray-800">
       {/* Game Stage */}
       <div
         id="game-stage"
