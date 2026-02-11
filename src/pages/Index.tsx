@@ -2,7 +2,7 @@ import GameStage from "@/components/GameStage";
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-game-outer">
+    <div className="h-full w-full flex items-center justify-center bg-gray-800">
       <GameStage />
     </div>
   );
